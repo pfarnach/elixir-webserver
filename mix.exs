@@ -14,7 +14,8 @@ defmodule Helloplug.Mixfile do
   #
   # Type "mix help compile.app" for more information
   def application do
-    [applications: [:logger, :sqlite_ecto, :ecto, :cowboy, :plug]]
+    [applications: [:logger, :sqlite_ecto, :ecto, :cowboy, :plug],
+    mod: {Helloplug, []}]
   end
 
   # Dependencies can be Hex packages:
